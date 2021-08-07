@@ -4,7 +4,7 @@
         <a class="navbar-brand" href="#">
           <div class="d-flex flex-row bd-highlight mb-3 align-items-center">
             <img src="images/delhi 2.jpg" width="80" height="80" class="d-inline-block align-top mr-5 rounded-circle" alt="" loading="lazy">
-            <h2 style="font-family: Copperplate, Papyrus, fantasy;" id = 'logo'><b>GUIDE TO DELHI</b></h2>
+            <h2><b>GUIDE TO DELHI</b></h2>
           </div>
         </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
