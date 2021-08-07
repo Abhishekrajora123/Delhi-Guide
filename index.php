@@ -1,66 +1,4 @@
- <!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    #logo {
-  animation: mymove 5s 2;
-}
-
-@keyframes mymove {
-  50% {font-size: 45px;}
-}
-
-    .fa {
-      padding: 7px;
-      font-size: 18px;
-      width: 28px;
-      border-radius: 50%;
-      text-align: center;
-      text-decoration: none;
-      margin: 5px 2px;
-    }
-    .fa-facebook {
-      background: #3B5998;
-      color: white;
-    }
-    .fa-twitter {
-      background: #55ACEE;
-      color: white;
-    }
-    .fa-linkedin {
-      background: #007bb5;
-      color: white;
-    }
-    .fa-instagram {
-      background: #c13584;
-      color: white;
-    }
-    .fa-snapchat-ghost {
-      background: #fffc00;
-      color: white;
-      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    }
-    .carousel-inner{
-       height: 300px;
-    }
-
-    .carousel-item > img {
-        height: 300px !important;
-        width:  100% !important;
-    }
-    </style>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <title>Guide to delhi</title>
-  </head>
-  <body>
+<?php include("header.php"); ?>
   <div class="wrapper">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
@@ -196,40 +134,5 @@
     </div>
     </div>
   </div>
-      <footer class="bg-lightgrey">
-        <div class="nav justify-content-between">
-          <div class="nav flex-column">
-            <h4 class="text-primary">Contact: 9870845579 </h4>
-            <a href="mailto: abhishekrajora899@gmail.com"> abhishekrajora899@gmail.com</a>
-            <a href="mailto: dhruvsharmaa8@gmail.com">dhruvsharmaa8@gmail.com</a>
-            <a href="mailto: Manvibhati85@gmail.com">Manvibhati85@gmail.com</a>
-            <a href="mailto: 2019510657.anushree@ug.sharda.ac.in">2019510657.anushree@ug.sharda.ac.in</a>
-          </div>
 
-        <div class="nav flex-column justify-content-end">
-          <div class="d-flex justify-content-end">
-          <a href="https://www.facebook.com/rajoraabhi02" class="fa fa-facebook" target="_blank"></a>
-          <a href="https://twitter.com/Abhishe86572537" class="fa fa-twitter" target="_blank"></a>
-          <a href="https://www.instagram.com/invites/contact/?i=m5rffx7paoy&utm_content=1w7wdgi" class="fa fa-instagram" target="_blank"></a>
-          <a href="https://www.linkedin.com/in/abhishek-rajora-600724213" class="fa fa-linkedin" target="_blank"></a>
-          <a href="https://www.snapchat.com/add/abhi_rajora" class="fa fa-snapchat-ghost" target="_blank"></a>
-          </div>
-          <p class="text-primary d-flex justify-content-end">&copy 2021-2050 by abhi_rajora. All Rights Reserved.</p>
-        </div>
-      </div>
-      </footer>
-</div>
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-    -->
-  </body>
-</html>
+<?php include("footer.php") ?>

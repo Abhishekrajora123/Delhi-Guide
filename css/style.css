@@ -1,0 +1,46 @@
+#logo {
+animation: mymove 5s 2;
+}
+
+@keyframes mymove {
+50% {font-size: 45px;}
+}
+
+.fa {
+  padding: 7px;
+  font-size: 18px;
+  width: 28px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #c13584;
+  color: white;
+}
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.carousel-inner{
+   height: 300px;
+}
+
+.carousel-item > img {
+    height: 300px !important;
+    width:  100% !important;
+}
