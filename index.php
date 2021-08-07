@@ -121,7 +121,7 @@
     </ul>
   </div>
 </nav>
-   <img src="images/India_Gate.jpg" alt="Delhi image" height="400px" width="100%" class=""> -->
+   <img src="images/India_Gate.jpg" alt="Delhi image" height="400px" width="100%" class="">
     <div class="jumbotron jumbotron-fluid">
     <div class="bg-light p-2">
       <h2 class="text-center display-4">Welcome</h2>
