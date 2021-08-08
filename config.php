@@ -1,10 +1,10 @@
 <?php
 session_start();
 class users{
-	public $host="127.0.0.1";
-	public $username="root";
-	public $password="rootpassword";
-	public $dbname="Guide_to_delhi";
+	public $host="remotemysql.com";
+	public $username="xVC3cf0d4O";
+	public $password="X4yO52sBLm";
+	public $dbname="xVC3cf0d4O";
 	public $run;
 
 
@@ -40,7 +40,7 @@ class users{
 		}
 		else
 		{
-			return None;
+			return false;
 		}
 	}
 
