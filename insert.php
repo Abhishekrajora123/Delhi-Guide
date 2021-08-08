@@ -16,7 +16,7 @@
       <input type="text"  name="n" placeholder="Enter name"/><br><br>
       <input type="text"  name="a" placeholder="Enter address"/><br><br>
       <input type="text"  name="ml" placeholder="Enter map link"/><br><br>
-      <input type="float"  name="rat" placeholder="Enter rating"/><br><br>
+      <input type="float"  name="ty" placeholder="Enter type"/><br><br>
       <input type="text"  name="img_n" placeholder="Enter image name"/><br><br>
       <input type="text"  name="des" placeholder="Enter description here"/><br><br>
       <input type="submit"  name="submit" value="Submit"/>

@@ -4,7 +4,7 @@ extract($_POST);
 if(isset($submit))
 {
   if ($_GET['id'] == '1'){
-  	$inserts="insert into HOTELS (name, address, map_link, rating, image_name, description) values ('$n','$a', '$ml', '$rat', '$img_n', '$des')";
+  	$inserts="insert into HOTELS (name, address, map_link, type, image_name, description) values ('$n','$a', '$ml', '$ty', '$img_n', '$des')";
       if($obj->insert($inserts))
   	{
   		$obj->url("admin.php?msg=run");
