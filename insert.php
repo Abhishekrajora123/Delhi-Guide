@@ -5,7 +5,7 @@
   <center>
   <?php if ($_GET['id'] == '4' ||$_GET['msg'] == 'run'): ?>
     <form method="post"  enctype="multipart/form-data" action="insert_submit.php?id=<?php echo $_GET['id']; ?>">
-      <h2>Registration Form</h2>
+      <h2>Insert <?php  $_GET['id'];?></h2>
       <?php if(isset($_GET['msg']))
       {
         echo "<p>Hotel added successfully</>";
@@ -22,7 +22,7 @@
     </form>
   <?php else: ?>
     <form method="post"  enctype="multipart/form-data" action="insert_submit.php?id=<?php echo $_GET['id']; ?>">
-      <h2>Registration Form</h2>
+      <h2>Insert <?php  $_GET['id'];?></h2>
       <?php if(isset($_GET['msg']))
       {
         echo "<p>Your registration is  successfully done</>";
