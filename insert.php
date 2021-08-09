@@ -26,7 +26,7 @@
         echo "Restaurants";
       else:
         echo "Tourist Places";
-      ?></h2>
+      endif;?></h2>
       <?php if(isset($_GET['msg']))
       {
         echo "<p>Your registration is  successfully done</>";
