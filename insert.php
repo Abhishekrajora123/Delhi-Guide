@@ -22,11 +22,11 @@
     </form>
   <?php else: ?>
     <form method="post"  enctype="multipart/form-data" action="insert_submit.php?id=<?php echo $_GET['id']; ?>">
-      <h2>Insert <?php if ($_GET['id'] == '1'){ echo "Hotels" } elseif ($_GET['id'] == '2'){
-        echo "Restaurants"
-      } else {
-        echo "Tourist Places"
-      };?></h2>
+      <h2>Insert <?php if ($_GET['id'] == '1'): echo "Hotels"; elseif ($_GET['id'] == '2'):
+        echo "Restaurants";
+      else:
+        echo "Tourist Places";
+      ?></h2>
       <?php if(isset($_GET['msg']))
       {
         echo "<p>Your registration is  successfully done</>";
