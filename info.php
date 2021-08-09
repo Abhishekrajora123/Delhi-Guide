@@ -39,7 +39,7 @@ if (isset($_GET['id'])){
    <hr>
  <div class="row">
    <?php if ($flag == 1): while($row = $val->fetch_assoc()){?>
- <div class="col-sm-2">
+ <div class="col-sm-3">
  <div class="card">
    <img src="images/<?php echo $row['image_name'];?>.jpg" height= "100px" class="card-img-top" alt="">
    <div class="card-body">
