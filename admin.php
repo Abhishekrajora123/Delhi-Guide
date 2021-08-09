@@ -73,8 +73,13 @@ if ($obj-> loggedin() == ""){
         <a class="dropdown-item" href="insert.php?id=3" value = "3">Add</a>
       </div>
     </li>
-    <li class="nav-item">
-      <a class="dropdown-item" href="insert.php?id=4" value = "4">Add</a>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Clubs & pubs
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="insert.php?id=4" value = "4">Add</a>
+      </div>
     </li>
   </ul>
 </div>

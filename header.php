@@ -53,9 +53,9 @@ include "config.php";
             Hotels
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="info.php?type=5" value = "5">5 Star</a>
-            <a class="dropdown-item" href="info.php?type=4" value = "4">4 Star</a>
-            <a class="dropdown-item" href="info.php?type=3" value = "3">3 Star</a>
+            <a class="dropdown-item" href="info.php?id=5 Star" value = "5">5 Star</a>
+            <a class="dropdown-item" href="info.php?id=4 Star" value = "4">4 Star</a>
+            <a class="dropdown-item" href="info.php?id=3 Star" value = "3">3 Star</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -63,9 +63,9 @@ include "config.php";
             Restaurants
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="info.php?id=rd">Dhabas</a>
-            <a class="dropdown-item" href="info.php?id=rs">Street vendors</a>
-            <a class="dropdown-item" href="info.php?id=rc">Cafes</a>
+            <a class="dropdown-item" href="info.php?id=Dhabas">Dhabas</a>
+            <a class="dropdown-item" href="info.php?id=Street vendors">Street vendors</a>
+            <a class="dropdown-item" href="info.php?id=Cafes">Cafes</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -73,15 +73,14 @@ include "config.php";
             Tourist Places
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="info.php?id=tt">Temples</a>
-            <a class="dropdown-item" href="info.php?id=tp">Parks</a>
-            <a class="dropdown-item" href="info.php?id=tz">Zoo</a>
-            <a class="dropdown-item" href="info.php?id=tcp">Connaught Palace</a>
-            <a class="dropdown-item" href="info.php?id=tm">Monuments</a>
+            <a class="dropdown-item" href="info.php?id=Temples">Temples</a>
+            <a class="dropdown-item" href="info.php?id=Parks">Parks</a>
+            <a class="dropdown-item" href="info.php?id=Zoo">Zoo</a>
+            <a class="dropdown-item" href="info.php?id=Monuments">Monuments</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="info.php?id=club">
+          <a class="nav-link" href="info.php?id=clubs Pubs">
             Clubs & Pubs
           </a>
         </li>

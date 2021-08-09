@@ -1,5 +1,6 @@
 <?php
 session_start();
+// error_reporting(E_ALL);
 class users{
 	public $host="remotemysql.com";
 	public $username="xVC3cf0d4O";
@@ -36,7 +37,33 @@ class users{
 		$name=$this->run->query($data);
 		if($name)
 		{
-			return $this->val[]=$name;;
+			return $this->val[]=$name;
+		}
+		else
+		{
+			return false;
+		}
+	}
+  // delete
+  public function delete($data)
+	{
+		$name=$this->run->query($data);
+		if($name)
+		{
+			return $this->val[]=$name;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+  public function edit($data)
+	{
+		$name=$this->run->query($data);
+		if($name)
+		{
+			return $this->val[]=$name;
 		}
 		else
 		{
