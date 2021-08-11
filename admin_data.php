@@ -2,6 +2,10 @@
 include "data_fetch.php";
  ?>
 <table class="table table-hover table-sm table-responsive">
+  <form  method="POST" enctype="multipart/form-data" action="admin_data.php?type=<?php echo $_GET['type']; ?>&msg=run&val=n&table=<?php echo $_GET['table']; ?>">
+    <input type="text"  name="n" placeholder="Search Name"/><br><br>
+    <input type="submit"  name="submit" value="Submit"/>
+  </form>
   <?php if ($flag == 1 && $table == 'admin'): ?>
   <thead>
     <tr>

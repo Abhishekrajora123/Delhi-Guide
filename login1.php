@@ -34,9 +34,12 @@
 	            <div class="form-group d-flex">
 	              <input type="password" name="p" class="form-control rounded-left" placeholder="Password" required>
 	            </div>
-	            <div class="form-group d-md-flex">
-								<div class="w-100 text-md-right">
-									<a href="mailto: abhishekrajora899@gmail.com">Don't have account contact admin.</a>
+              <div class="form-group d-md-flex">
+								<div class="w-100 text-md-left">
+									<a href="forgot_pass.php">Forgot Password</a>
+								</div>
+                <div class="w-100 text-md-right">
+									<a href="mailto: abhishekrajora899@gmail.com">Don't have account.</a>
 								</div>
 	            </div>
 	            <div class="form-group">

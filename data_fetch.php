@@ -4,6 +4,7 @@ if ($_GET['msg'] == 'run')
 else {
   include "header.php";
 }
+extract($_POST);
 $flag = 0;
 if (isset($_GET['id'])){
   $rating = $_GET['id'];
@@ -30,25 +31,46 @@ if (isset($_GET['id'])){
 }
 }
 elseif (isset($_GET['type'])){
+  $value = $_GET['val'];
   if ($_GET['type'] == '1'){
     $table = 'hotels';
-    $result = "SELECT * from hotels order by type";
+    if (isset($value)){
+      $result = "SELECT * from hotels where name like '%$n%' order by type";
+    }else {
+      $result = "SELECT * from hotels order by type";
+    }
   }
   elseif ($_GET['type'] == '2') {
     $table = 'restaurants';
-    $result = "SELECT * from restaurants order by type";
+    if (isset($value)){
+      $result = "SELECT * from restaurants where name like '%$n%' order by type";
+    }else {
+      $result = "SELECT * from restaurants order by type";
+    }
   }
   elseif ($_GET['type'] == '3') {
     $table = 'tourist_places';
-    $result = "SELECT * from tourist_places order by type";
+    if (isset($value)){
+      $result = "SELECT * from tourist_places where name like '%$n%' order by type";
+    }else {
+      $result = "SELECT * from tourist_places order by type";
+    }
   }
   elseif ($_GET['type'] == '4') {
     $table = 'clubs_pubs';
-    $result = "SELECT * from clubs_pubs";
+    if (isset($value)){
+      $result = "SELECT * from clubs_pubs where name like '%$n%' order by type";
+    }else {
+      $result = "SELECT * from clubs_pubs order by type";
+    }
   }
   elseif ($_GET['type'] == '5') {
     $table = 'admin';
-    $result = "SELECT * from admin";
+    if (isset($value)){
+      $result = "SELECT * from admin where name like '%$n%' order by type";
+    }else {
+      $result = "SELECT * from admin order by type";
+    }
   }
   else {
     echo "No data";
@@ -62,5 +84,6 @@ elseif (isset($_GET['type'])){
  }
 
 }
+
 
  ?>
