@@ -11,12 +11,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
  $numbers = rand(00000, 99999);
  $message = "<h4>Your password reset code is .</h4>";
  $message .= "$numbers";
- $header = "From:rathi160294@gmail.com \r\n";
+ $header = "From: test@gmail.com \r\n";
  $header .= "MIME-Version: 1.0\r\n";
  $header .= "Content-type: text/html\r\n";
- echo $to . $subject . $message . $header;
  $retval = mail($to,$subject,$message,$header);
- echo "here" . $retval;
+ echo $retval;
  if($retval == true) {
    echo "here" . $retval;
    if ($val->num_rows > 0) {
