@@ -14,9 +14,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
  $header = "From:rathi160294@gmail.com \r\n";
  $header .= "MIME-Version: 1.0\r\n";
  $header .= "Content-type: text/html\r\n";
- echo $message . $header;
  $retval = mail($to,$subject,$message,$header);
  if($retval == true) {
+   echo "here" . $retval;
    if ($val->num_rows > 0) {
    while($row = $val->fetch_assoc()){
     $id = $row['id'];
