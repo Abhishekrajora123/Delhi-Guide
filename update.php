@@ -50,7 +50,7 @@ else {
   </div>
   <div class="form-group">
     <label for="pass">Password</label>
-    <input type="text" id="pass" value="<?php  echo $row['password'];?>" name="p" class="form-control" placeholder="Password">
+    <input type="text" id="pass" value="<?php  echo $row['password'];?>" name="pass" class="form-control" placeholder="Password">
   </div>
   <?php } ?>
 <?php elseif ($flag == 1): while($row = $val->fetch_assoc()){ $type = $row['type']?>
