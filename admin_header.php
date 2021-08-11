@@ -1,8 +1,8 @@
 <?
 include("config.php");
-if ($obj-> loggedin() == ""){
-  $obj-> url("index.php");
-}
+// if ($obj-> loggedin() == ""){
+//   $obj-> url("index.php");
+// }
 ?>
 <!doctype html>
 <html lang="en">
@@ -38,7 +38,7 @@ if ($obj-> loggedin() == ""){
       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
         <?php if($_GET['err'] == 'error'): ?>
         <a class="dropdown-item fa fa-user" href="#"> Profile</a>
-        <a class="dropdown-item fa fa-lock" href="login.php"> login</a>
+        <a class="dropdown-item fa fa-lock" href="login1.php"> login</a>
       <?php elseif($_GET['msg'] == 'run'): ?>
         <a class="dropdown-item fa fa-user" href="admin.php?msg=run"> Profile</a>
         <a class="dropdown-item fa fa-lock" href="logout.php"> logout</a>
@@ -47,7 +47,7 @@ if ($obj-> loggedin() == ""){
       <?php endif; ?>
       <?php else: ?>
         <a class="dropdown-item fa fa-user" href="admin.php"> Profile</a>
-        <a class="dropdown-item fa fa-lock" href="login.php"> login</a>
+        <a class="dropdown-item fa fa-lock" href="login1.php"> login</a>
       <?php endif; ?>
 
       </div>

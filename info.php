@@ -1,6 +1,4 @@
-<?php
-include "header.php";
- ?>
+
 <?php include "data_fetch.php"; ?>
  <div class="jumbotron jumbotron-fluid">
    <h2 class="text-center display-4"><?php echo $rating; ?></h2>

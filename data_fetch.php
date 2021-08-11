@@ -1,5 +1,8 @@
 <?php
-
+if ($_SESSION['email']){include "admin_header.php";}
+else {
+  include "header.php";
+}
 $flag = 0;
 if (isset($_GET['id'])){
   $rating = $_GET['id'];

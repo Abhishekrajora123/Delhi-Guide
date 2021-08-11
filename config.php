@@ -1,6 +1,6 @@
 <?php
 session_start();
-// error_reporting(E_ALL);
+
 class users{
 	public $host="remotemysql.com";
 	public $username="xVC3cf0d4O";
