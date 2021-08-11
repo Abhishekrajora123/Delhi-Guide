@@ -14,6 +14,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
  $header = "From:rathi160294@gmail.com \r\n";
  $header .= "MIME-Version: 1.0\r\n";
  $header .= "Content-type: text/html\r\n";
+ echo $to . $subject . $message . $header;
  $retval = mail($to,$subject,$message,$header);
  echo "here" . $retval;
  if($retval == true) {
