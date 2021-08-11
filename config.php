@@ -1,6 +1,8 @@
 <?php
 session_start();
-
+error_reporting(-1);
+ini_set('display_errors', 'On');
+set_error_handler("var_dump");
 class users{
 	public $host="remotemysql.com";
 	public $username="xVC3cf0d4O";
