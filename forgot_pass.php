@@ -14,9 +14,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
  $header = "From:rathi160294@gmail.com \r\n";
  $header .= "MIME-Version: 1.0\r\n";
  $header .= "Content-type: text/html\r\n";
-
+ echo $message . $header;
  $retval = mail($to,$subject,$message,$header);
-
  if($retval == true) {
    if ($val->num_rows > 0) {
    while($row = $val->fetch_assoc()){
@@ -24,14 +23,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
    $result = "update admin SET password='$numbers' WHERE id= '$id' AND email = '$email'";
  	if($obj->edit($result))
  	{
-    echo "<script LANGUAGE='JavaScript'>
+    echo "<script>
       window.alert('Password is sent to $email');
       </script>";
      echo "<script>redirect('login1.php'); </script>";
  	}
  	else
  	{
-    echo "<script LANGUAGE='JavaScript'>
+    echo "<script'>
       window.alert('Please enter Registered email');
       </script>";
     echo "<script>redirect('forgot_pass.php'); </script>";
