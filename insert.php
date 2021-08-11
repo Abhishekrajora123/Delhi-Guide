@@ -1,7 +1,7 @@
 <?php include "admin_header.php"; ?>
 <div class="jumbotron">
   <div class="bg-light p-2">
-    <h2 class="text-center display-4">Welcome</h2>
+    <h2 class="text-center display-4"><?php echo $_GET['table']; ?></h2>
     <hr>
   <div>
 <form method="POST" enctype="multipart/form-data" action="update_submit.php?<?php echo "type=$type&msg=$$msg&table=$table&id=$rating" ?>">
