@@ -40,7 +40,7 @@ include("config.php");
         <a class="dropdown-item fa fa-user" href="#"> Profile</a>
         <a class="dropdown-item fa fa-lock" href="login1.php"> login</a>
       <?php elseif($_GET['msg'] == 'run'): ?>
-        <a class="dropdown-item fa fa-user" href="admin.php?msg=run"> Profile</a>
+        <a class="dropdown-item fa fa-user" href="admin.php?msg=run"> <?php echo $_SESSION['email']; ?> </a>
         <a class="dropdown-item fa fa-lock" href="logout.php"> logout</a>
         <?php if (strtolower($_SESSION['email']) == 'abhishekrajora889@gmail.com'): ?>
         <a class="dropdown-item fa fa-lock" href="register.php?type=5&table=admin&msg=run"> add admin</a>
