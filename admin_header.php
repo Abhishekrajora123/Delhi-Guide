@@ -1,7 +1,8 @@
 <?
-// if ($obj-> loggedin() == ""){
-//   $obj-> url("index.php");
-// }
+include("config.php");
+if ($obj-> loggedin() == ""){
+  $obj-> url("index.php");
+}
 ?>
 <!doctype html>
 <html lang="en">
