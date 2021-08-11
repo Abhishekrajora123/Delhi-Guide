@@ -7,21 +7,28 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	{
   $val = $obj->select($select);
  $to = $_POST["email"];
- $subject = "Password reset (Guide to delhi)";
+ // $subject = "Password reset (Guide to delhi)";
  $numbers = rand(00000, 99999);
- $message = "<h4>Your password reset code is .</h4>";
- $message .= "$numbers";
- $header = "From: test@gmail.com \r\n";
- $header .= "MIME-Version: 1.0\r\n";
- $header .= "Content-type: text/html\r\n";
- $retval = mail($to,$subject,$message,$header);
- echo $retval;
+ $pass = "pass".$numbers;
+ // $message = "<h4>Your password reset code is .</h4>";
+ // $message .= "$numbers";
+ // $header = "From: test@gmail.com \r\n";
+ // $header .= "MIME-Version: 1.0\r\n";
+ // $header .= "Content-type: text/html\r\n";
+ ini_set("SMTP", "aspmx.l.google.com");
+ini_set("sendmail_from", "rathi160294@gmail.com");
+
+$message = "The mail message was sent with the following mail setting:\r\nSMTP = aspmx.l.google.com\r\nsmtp_port = 25\r\nsendmail_from = YourMail@address.com";
+
+$headers = "From: YOURMAIL@gmail.com";
+echo $pass;
+$retval = mail($to, "Testing", $message, $headers);
+ // $retval = mail($to,$subject,$message,$header);
  if($retval == true) {
-   echo "here" . $retval;
    if ($val->num_rows > 0) {
    while($row = $val->fetch_assoc()){
     $id = $row['id'];
-   $result = "update admin SET password='$numbers' WHERE id= '$id' AND email = '$email'";
+   $result = "update admin SET password='$pass' WHERE id= '$id' AND email = '$email'";
  	if($obj->edit($result))
  	{
     echo "<script>
