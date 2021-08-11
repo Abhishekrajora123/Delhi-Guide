@@ -113,7 +113,7 @@ include("config.php");
   </div>
   <div class="col-sm-3">
     <div class="card">
-      <img src="images/LOTUS.jpg" height= "100px" class="card-img-top" alt="...">
+      <img src="images/restaurant.jpg" height= "100px" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Restaurants</h5>
         <a class="btn btn-primary btn-sm" href="admin_data.php?type=2&msg=run&table=restaurants" role="button" target="_blank">Edit</a>
@@ -131,7 +131,7 @@ include("config.php");
   </div>
   <div class="col-sm-3">
     <div class="card">
-      <img src="images/qutub.jpg" height= "100px" class="card-img-top" alt="...">
+      <img src="images/electric.jpg" height= "100px" class="card-img-top" alt="...">
       <div class="card-body" height= "200px">
         <h5 class="card-title">Clubs & Pubs</h5>
         <a class="btn btn-primary btn-sm" href="admin_data.php?type=4&msg=run&table=clubs_pubs" role="button" target="_blank">Edit</a>
