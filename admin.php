@@ -21,7 +21,7 @@ if ($obj-> loggedin() == ""){
   <body>
     <div class="wrapper">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.php?msg=run">
             <div class="d-flex flex-row bd-highlight mb-3 align-items-center">
               <img src="images/delhi 2.jpg" width="80" height="80" class="d-inline-block align-top mr-5 rounded-circle" alt="" loading="lazy">
               <h2><b>GUIDE TO DELHI</b></h2>
@@ -39,11 +39,13 @@ if ($obj-> loggedin() == ""){
         <a class="dropdown-item fa fa-user" href="#"> Profile</a>
         <a class="dropdown-item fa fa-lock" href="login.php"> login</a>
       <?php elseif($_GET['msg'] == 'run'): ?>
-        <a class="dropdown-item fa fa-user" href="#"> Profile</a>
+        <a class="dropdown-item fa fa-user" href="admin.php?msg=run"> Profile</a>
         <a class="dropdown-item fa fa-lock" href="logout.php"> logout</a>
-        <a class="dropdown-item fa fa-lock" href="register.php"> add admin</a>
+        <?php if (strtolower($_SESSION['email']) == 'abhishekrajora889@gmail.com'): ?>
+        <a class="dropdown-item fa fa-lock" href="register.php?type=5&table=admin&msg=run"> add admin</a>
+      <?php endif; ?>
       <?php else: ?>
-        <a class="dropdown-item fa fa-user" href="#"> Profile</a>
+        <a class="dropdown-item fa fa-user" href="admin.php"> Profile</a>
         <a class="dropdown-item fa fa-lock" href="login.php"> login</a>
       <?php endif; ?>
 
@@ -54,7 +56,7 @@ if ($obj-> loggedin() == ""){
         Hotels
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item" href="insert.php?id=1" value = "1">Add</a>
+        <a class="dropdown-item" href="insert.php?id=hotels&type=1" value = "1">Add</a>
       </div>
     </li>
     <li class="nav-item dropdown">
@@ -62,7 +64,7 @@ if ($obj-> loggedin() == ""){
         Restaurants
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item" href="insert.php?id=2" value = "2">Add</a>
+        <a class="dropdown-item" href="insert.php?id=restaurants&type=2" value = "2">Add</a>
       </div>
     </li>
     <li class="nav-item dropdown">
@@ -70,7 +72,7 @@ if ($obj-> loggedin() == ""){
         Tourist Places
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item" href="insert.php?id=3" value = "3">Add</a>
+        <a class="dropdown-item" href="insert.php?id=tourist_places&type=3" value = "3">Add</a>
       </div>
     </li>
     <li class="nav-item dropdown">
@@ -78,14 +80,71 @@ if ($obj-> loggedin() == ""){
         Clubs & pubs
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item" href="insert.php?id=4" value = "4">Add</a>
+        <a class="dropdown-item" href="insert.php?id=clubs_pubs&type=4" value = "4">Add</a>
       </div>
     </li>
+    <li><a class="nav-link" href='logout.php' role="button">Logout</a></li>
   </ul>
 </div>
 </nav>
+
+<h2 class="text-center display-4">Admin</h2>
 </div>
-<a href='logout.php' style='float:right'>Logout</a>
+
+<?php
+include "data_fetch.php";
+ ?>
+<div class="p-3">
+    <div class="row">
+      <?php if (strtolower($_SESSION['email']) == 'abhishekrajora889@gmail.com'): ?>
+      <div class="col-sm-3">
+        <div class="card">
+          <img src="images/radisson.jpg" height= "100px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Admin</h5>
+            <a class="btn btn-primary btn-sm" href="admin_data.php?type=5&msg=run&table=admin" role="button" target="_blank">Edit</a>
+          </div>
+        </div>
+      </div>
+    <?php endif; ?>
+  <div class="col-sm-3">
+    <div class="card">
+      <img src="images/radisson.jpg" height= "100px" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hotels</h5>
+        <a class="btn btn-primary btn-sm" href="admin_data.php?type=1&msg=run&table=hotels" role="button" target="_blank">Edit</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <img src="images/LOTUS.jpg" height= "100px" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Restaurants</h5>
+        <a class="btn btn-primary btn-sm" href="admin_data.php?type=2&msg=run&table=restaurants" role="button" target="_blank">Edit</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <img src="images/red fort.jpg" height= "100px" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Tourist Places</h5>
+        <a class="btn btn-primary btn-sm" href="admin_data.php?type=3&msg=run&table=tourist_places" role="button" target="_blank">Edit</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <img src="images/qutub.jpg" height= "100px" class="card-img-top" alt="...">
+      <div class="card-body" height= "200px">
+        <h5 class="card-title">Clubs & Pubs</h5>
+        <a class="btn btn-primary btn-sm" href="admin_data.php?type=4&msg=run&table=clubs_pubs" role="button" target="_blank">Edit</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 <?php include("footer.php")
 ?>

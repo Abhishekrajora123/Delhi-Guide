@@ -3,8 +3,8 @@
   <br>
   <br>
   <center>
-  <?php if ($_GET['id'] == '4' ||$_GET['msg'] == 'run'): ?>
-    <form method="post"  enctype="multipart/form-data" action="insert_submit.php?id=<?php echo $_GET['id']; ?>">
+  <?php if ($_GET['id'] == 'clubs_pubs' ||$_GET['msg'] == 'run'): ?>
+    <form method="post"  enctype="multipart/form-data" action="insert_submit.php?type=<?php echo $_GET['type']; ?>&id=<?php echo $_GET['id']; ?>">
       <h2>Insert Clubs And Pubs</h2>
       <?php if(isset($_GET['msg']))
       {
@@ -21,12 +21,8 @@
       <input type="submit"  name="submit" value="Submit"/>
     </form>
   <?php else: ?>
-    <form method="post"  enctype="multipart/form-data" action="insert_submit.php?id=<?php echo $_GET['id']; ?>">
-      <h2>Insert <?php if ($_GET['id'] == '1'): echo "Hotels"; elseif ($_GET['id'] == '2'):
-        echo "Restaurants";
-      else:
-        echo "Tourist Places";
-      endif;?></h2>
+    <form method="post"  enctype="multipart/form-data" action="insert_submit.php?type=<?php echo $_GET['type']; ?>&id=<?php echo $_GET['id']; ?>">
+      <h2>Insert <?php echo $_GET['id'];?></h2>
       <?php if(isset($_GET['msg']))
       {
         echo "<p>Your registration is  successfully done</>";

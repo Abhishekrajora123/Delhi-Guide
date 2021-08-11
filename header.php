@@ -20,7 +20,7 @@ include "config.php";
   <body>
     <div class="wrapper">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="<?php if ($_GET['msg'] == 'run'): echo "index.php?msg=run"; else: echo "index.php"; endif;?>">
             <div class="d-flex flex-row bd-highlight mb-3 align-items-center">
               <img src="images/delhi 2.jpg" width="80" height="80" class="d-inline-block align-top mr-5 rounded-circle" alt="" loading="lazy">
               <h2><b>GUIDE TO DELHI</b></h2>
@@ -36,14 +36,16 @@ include "config.php";
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <?php if($_GET['err'] == 'error'): ?>
             <a class="dropdown-item fa fa-user" href="#"> Profile</a>
-            <a class="dropdown-item fa fa-lock" href="login.php"> login</a>
+            <a class="dropdown-item fa fa-lock" href="login1.php"> login</a>
           <?php elseif($_GET['msg'] == 'run'): ?>
-            <a class="dropdown-item fa fa-user" href="#"> Profile</a>
+            <a class="dropdown-item fa fa-user" href="admin.php?msg=run"> Profile</a>
             <a class="dropdown-item fa fa-lock" href="logout.php"> logout</a>
-            <a class="dropdown-item fa fa-lock" href="register.php"> add admin</a>
+          <?php if (strtolower($_SESSION['email']) == 'abhishekrajora889@gmail.com'): ?>
+            <a class="dropdown-item fa fa-lock" href="register.php?type=5&table=admin&msg=run"> add admin</a>
+          <?php endif; ?>
           <?php else: ?>
             <a class="dropdown-item fa fa-user" href="#"> Profile</a>
-            <a class="dropdown-item fa fa-lock" href="login.php"> login</a>
+            <a class="dropdown-item fa fa-lock" href="login1.php"> login</a>
           <?php endif; ?>
 
           </div>
@@ -53,9 +55,9 @@ include "config.php";
             Hotels
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="info.php?id=5 Star" value = "5">5 Star</a>
-            <a class="dropdown-item" href="info.php?id=4 Star" value = "4">4 Star</a>
-            <a class="dropdown-item" href="info.php?id=3 Star" value = "3">3 Star</a>
+            <a class="dropdown-item" href="info.php?type=hotels&id=5 Star" value = "5">5 Star</a>
+            <a class="dropdown-item" href="info.php?type=hotels&id=4 Star" value = "4">4 Star</a>
+            <a class="dropdown-item" href="info.php?type=hotels&id=3 Star" value = "3">3 Star</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -63,9 +65,9 @@ include "config.php";
             Restaurants
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="info.php?id=Dhabas">Dhabas</a>
-            <a class="dropdown-item" href="info.php?id=Street vendors">Street vendors</a>
-            <a class="dropdown-item" href="info.php?id=Cafes">Cafes</a>
+            <a class="dropdown-item" href="info.php?id=dhabas">Dhabas</a>
+            <a class="dropdown-item" href="info.php?id=street vendors">Street vendors</a>
+            <a class="dropdown-item" href="info.php?id=cafes">Cafes</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -80,7 +82,7 @@ include "config.php";
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="info.php?id=clubs Pubs">
+          <a class="nav-link" href="info.php?id=clubs_pubs">
             Clubs & Pubs
           </a>
         </li>

@@ -63,7 +63,7 @@ class users{
 		$name=$this->run->query($data);
 		if($name)
 		{
-			return $this->val[]=$name;
+			return true;
 		}
 		else
 		{

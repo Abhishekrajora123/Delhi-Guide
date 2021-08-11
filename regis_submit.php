@@ -3,16 +3,16 @@ include "config.php";
 extract($_POST);
 if(isset($submit))
 {
-	$img=$_FILES['img']['name'];
-	move_uploaded_file($_FILES['img']['tmp_name'],'image/'.$img);
-	$inserts="insert into register values ('','$n','$e','$nm','$p','$img')";
-    if($obj->insert($inserts))
+	$table = $_GET['table'];
+	$type = $_GET['type'];
+	$inserts="insert into $table (name, email, password) values ('$n','$e','$pass')";
+  if($obj->insert($inserts))
 	{
-		$obj->url("index.php?msg=run");
+		$obj->url("admin_data.php?type=$type&msg=run&table=$table");
 	}
 	else
 	{
-		echo "your registration is not successfull";
+		echo "Admin not created or already exists";
 	}
 
 
