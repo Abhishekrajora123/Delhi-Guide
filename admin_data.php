@@ -1,5 +1,4 @@
 <?php
-include "header.php";
 include "data_fetch.php";
  ?>
 <table class="table table-hover table-sm table-responsive">

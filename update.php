@@ -30,6 +30,16 @@ else {
     <input type="text"  name="in", value="<?php  echo $row['image_name'];?>", placeholder="Enter your Image name"/><br><br>
     <input type="submit"  name="update" value="Update"/>
   <?php } ?>
+  <?php if ($flag == 1 && $_GET['table'] != 'clubs_pubs'): while($row = $val->fetch_assoc()){?>
+    <br>
+    <br>
+    <input type="text"  name="n", value="<?php  echo $row['name'];?>", placeholder="Enter Your name"/><br><br>
+    <input type="text"  name="ad", value="<?php  echo $row['address'];?>", placeholder="Enter Your Address"/><br><br>
+    <input type="text"  name="ml", value="<?php  echo $row['map_link'];?>", placeholder="Enter Your Map link"/><br><br>
+    <input type="text"  name="des", value="<?php  echo $row['description'];?>", placeholder="Enter Your description"/><br><br>
+    <input type="text"  name="in", value="<?php  echo $row['image_name'];?>", placeholder="Enter your Image name"/><br><br>
+    <input type="submit"  name="update" value="Update"/>
+  <?php } ?>
   <?php elseif ($flag == 1 && $_GET['table'] == 'admin'): while($row = $val->fetch_assoc()){ ?>
     <br>
     <br>

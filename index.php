@@ -39,7 +39,7 @@
       <img src="images/red fort.jpg" height= "100px" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">RED FORT</h5>
-        <p class="card-text">The Red Fort is a historic fort in the city of Delhi (in Old Delhi) in India that served as the main residence of the Mughal Emperors.Emperor Shah Jahan commissioned construction of the Red Fort on 12 May 1638, when he decided to shift his capital from Agra to Delhi.</p>
+        <p class="card-text">The Red Fort is a historic fort in the city of Delhi (in Old Delhi) in India that served as the main residence of the MughalEmperors.Emperor ShahJahan commission construction of the Red Fort on 12 May 1638, when he decided to shift his capital from Agra to Delhi.</p>
       </div>
     </div>
   </div>
@@ -66,7 +66,7 @@
       <img src="images/jama.jpg" height= "100px" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">JAMA MASJID</h5>
-        <p class="card-text">The Masjid-i Jehan-Numa (lit. 'World-reflecting Mosque'), commonly known as the Jama Masjid of Delhi, is one of the largest mosques in India. It was built by the Mughal Emperor Shah Jahan between 1650 and 1656, and inaugurated by its first Imam, Syed Abdul Ghafoor Shah Bukhari.</p>
+        <p class="card-text">The Masjid-i Jehan-Numa (lit. 'World-reflecting Mosque'), commonly known as the Jama Masjid of Delhi, is one of the largest mosques in India.</p>
       </div>
     </div>
   </div>
