@@ -1,5 +1,6 @@
 <?php
-if (isset($_SESSION['email'])){include "admin_header.php";}
+if ($_GET['msg'] == 'run')
+{include "admin_header.php";}
 else {
   include "header.php";
 }
