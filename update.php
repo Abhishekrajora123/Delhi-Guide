@@ -29,7 +29,7 @@ else {
       <input type="text"  name="in", value="<?php  echo $row['image_name'];?>", placeholder="Enter your Image name"/><br><br>
       <input type="submit"  name="update" value="Update"/>
   <?php } ?>
-<?php elseif ($flag == 1 && $_GET['table']] == 'admin'): while($row = $val->fetch_assoc()){?>
+<?php elseif ($flag == 1 && $_GET['table'] == 'admin'): while($row = $val->fetch_assoc()){?>
   <br>
   <br>
   <input type="text"  name="n", value="<?php  echo $row['name'];?>", placeholder="Enter Your name"/><br><br>
@@ -37,7 +37,7 @@ else {
   <input type="password"  name="pass", value="<?php  echo $row['password'];?>", placeholder="Enter Your Password"/><br><br>
   <input type="submit"  name="update" value="Update"/>
   <?php } ?>
-  <?php elseif ($flag == 1 && $_GET['table'] == 'admin'): while($row = $val->fetch_assoc()){ ?>
+  <?php elseif ($flag == 1): while($row = $val->fetch_assoc()){ ?>
     <br>
     <br>
     <input type="text"  name="n", value="<?php  echo $row['name'];?>", placeholder="Enter Your name"/><br><br>
