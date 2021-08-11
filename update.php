@@ -122,7 +122,7 @@ else {
     <input type="text" value="<?php  echo $row['description'];?>" class="form-control" name="des" id="description" placeholder="Description">
   </div>
   <div class="form-group">
-    <label for="image">Address 2</label>
+    <label for="image">image_name</label>
     <input type="text" value="<?php  echo $row['image_name'];?>" class="form-control" name="in" id="image" placeholder="Image Name">
   </div>
   <?php } endif; ?>
