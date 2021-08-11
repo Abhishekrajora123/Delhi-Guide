@@ -67,9 +67,9 @@ elseif (isset($_GET['type'])){
   elseif ($_GET['type'] == '5') {
     $table = 'admin';
     if (isset($value)){
-      $result = "SELECT * from admin where name like '%$n%' order by type";
+      $result = "SELECT * from admin where name like '%$n%'";
     }else {
-      $result = "SELECT * from admin order by type";
+      $result = "SELECT * from admin";
     }
   }
   else {
