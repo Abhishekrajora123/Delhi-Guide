@@ -3,7 +3,7 @@
   <div class="bg-light p-2">
     <h2 class="text-center display-4"><?php echo $_GET['id']; ?></h2>
     <hr>
-  <div>
+  </div>
 <form method="POST" enctype="multipart/form-data" action="update_submit.php?<?php echo "type=$type&msg=$msg&table=$table&id=$rating" ?>">
 <?php if ($_GET['id'] == 'clubs_pubs' || $_GET['msg'] == 'run'): ?>
     <div class="form-group">
