@@ -127,14 +127,5 @@
         </div>
       </div>
     </section>
-    <!-- <br>
-    <input type="text"  name="n" placeholder="Enter Your name"/><br><br>
-    <input type="email"  name="e" placeholder="Enter Your email"/><br><br>
-    <input type="password"  name="pass" placeholder="Enter your password"/><br><br>
-    <input type="submit"  name="submit" value="Submit"/>
-  </form>
-  </center>
-  <br>
-  <br> -->
 </div>
 <?php include "footer.php"; ?>

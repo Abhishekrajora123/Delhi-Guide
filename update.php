@@ -16,10 +16,11 @@ else {
 }
 ?>
 <div class="jumbotron">
+  <section class="vh-100 gradient-custom">
   <div class="bg-light p-2">
     <h2 class="text-center display-4"><?php echo $_GET['table']; ?></h2>
     <hr>
-  <div>
+  </div>
 <form method="POST" enctype="multipart/form-data" action="update_submit.php?type=<?php echo "$type"; ?>&msg=<?php echo $msg; ?>&table=<?php echo $table; ?>&id=<?php echo $rating; ?>">
   <?php if ($flag == 1 && $_GET['table'] == 'clubs_pubs'): while($row = $val->fetch_assoc()){?>
   <div class="form-group">
@@ -133,6 +134,7 @@ else {
   <input class="btn btn-primary btn-lg" name="update" type="submit" value="Update" />
 
 </form>
+</section>
 </div>
 
 <?php include "footer.php"; ?>
