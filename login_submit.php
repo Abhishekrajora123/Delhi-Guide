@@ -4,7 +4,6 @@ extract($_POST);
 if(isset($login))
 {
 	$pass = md5($p);
-	echo $pass;
 	$select="select email,password from admin where email='$e' and password='$pass'";
 	if($obj->login($select))
 	{
@@ -13,7 +12,7 @@ if(isset($login))
 	}
 	else
 	{
-		$obj->url("index.php?err=error");
+		$obj->url("login1.php?err=error");
 	}
 }
 
