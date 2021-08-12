@@ -38,7 +38,9 @@ include "data_fetch.php";
       <th scope="col">Id</th>
       <th scope="col">Name</th>
       <th scope="col">Address</th>
+      <?php if ($table != 'clubs_pubs'): ?>
       <th scope="col">Type</th>
+      <?php endif; ?>
       <th scope="col">Map Link</th>
       <th scope="col">Description</th>
       <th scope="col">Image Name</th>
@@ -55,7 +57,9 @@ include "data_fetch.php";
       <th><?php echo $row['id']; ?></th>
       <td><?php echo $row['name']; ?></td>
       <td><?php echo $row['address']; ?></td>
-      <td><?php if ($table != 'clubs_pubs'): echo $row['type']; else: echo ""; endif; ?></td>
+      <?php if ($table != 'clubs_pubs'):?>
+      <td><?php echo $row['type'];?> </td>
+    <?php endif; ?>
       <td><?php echo $row['map_link']; ?></td>
       <td><?php echo $row['description']; ?></td>
       <td><?php echo $row['image_name']; ?></td>

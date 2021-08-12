@@ -16,7 +16,7 @@ $msg = $_GET['msg'];
   </div>
   <div class="form-group">
     <label for="address">Address</label>
-    <input type="text" name="ad" class="form-control" id="address" placeholder="Address">
+    <input type="text" name="a" class="form-control" id="address" placeholder="Address">
   </div>
   <div class="form-group">
     <label for="map">Map Link</label>
@@ -24,11 +24,11 @@ $msg = $_GET['msg'];
   </div>
   <div class="form-group">
     <label for="description">Description</label>
-    <input type="text"  class="form-control" name="des" id="description" placeholder="Description">
+    <input type="text" class="form-control" name="des" id="description" placeholder="Description">
   </div>
   <div class="form-group">
     <label for="image">Image Name</label>
-    <input type="text"  class="form-control" name="in" id="image" placeholder="Image Name">
+    <input type="text" class="form-control" name="img_n" id="image" placeholder="Image Name">
   </div>
   <?php else: ?>
   <div class="form-group">
