@@ -26,7 +26,7 @@
 		      	<div class="icon d-flex align-items-center justify-content-center">
 		      		<span class="fa fa-user-o"></span>
 		      	</div>
-		      	<h3 class="text-center mb-4">Have an account?</h3>
+		      	<h3 class="text-center text-primary mb-4">Have an account?</h3>
 						<form method="post" action="login_submit.php" class="login-form">
 		      		<div class="form-group">
 		      			<input type="text" name="e" class="form-control rounded-left" placeholder="Email" required>
@@ -39,11 +39,11 @@
 									<a href="forgot_pass.php">Forgot Password</a>
 								</div> -->
                 <div class="w-100 text-md-right">
-									<a href="mailto: abhishekrajora899@gmail.com">Don't have account.</a>
+									<a class="text-primary" href="mailto: abhishekrajora899@gmail.com">Don't have account.</a>
 								</div>
 	            </div>
 	            <div class="form-group">
-	            	<input type="submit" name="login" value="Submit" class="btn btn-primary rounded submit p-3 px-5"/>
+	            	<input type="submit" name="login" value="Submit" class="btn btn-primary rounded-pill submit p-3 px-5"/>
 	            </div>
 	          </form>
 	        </div>

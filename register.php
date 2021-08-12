@@ -91,6 +91,7 @@
     </div>
     </nav>
     <section class="vh-100">
+      <div class="jumbotron">
       <div class="container py-5 h-100">
         <div class="row justify-content-center align-items-center h-100">
           <div class="col-12 col-lg-9 col-xl-7">
@@ -125,6 +126,7 @@
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
 </div>
