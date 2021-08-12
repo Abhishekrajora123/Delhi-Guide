@@ -20,7 +20,7 @@ else {
     <h2 class="text-center display-4"><?php echo $_GET['table']; ?></h2>
     <hr>
   <div>
-<form method="POST" enctype="multipart/form-data" action="update_submit.php?<?php echo "type=$type&msg=$$msg&table=$table&id=$rating" ?>">
+<form method="POST" enctype="multipart/form-data" action="update_submit.php?type=<?php echo "$type"; ?>&msg=<?php echo $msg; ?>&table=<?php echo $table; ?>&id=<?php echo $rating; ?>">
   <?php if ($flag == 1 && $_GET['table'] == 'clubs_pubs'): while($row = $val->fetch_assoc()){?>
   <div class="form-group">
     <label for="name">Name</label>
@@ -75,7 +75,7 @@ else {
       <select id="inputState" class="form-control" name="ty">
         <option>Choose Type</option>
         <?php if ($_GET['type'] == '1'): ?>
-        <option value="5 star"
+        <option value="5 Star"
         <?php if ($type == '5 Star'){
           echo "selected";
         } ?>

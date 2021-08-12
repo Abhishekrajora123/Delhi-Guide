@@ -1,10 +1,14 @@
-<?php include "admin_header.php"; ?>
+<?php include "admin_header.php";
+$table = $_GET['id'];
+$type = $_GET['type'];
+$msg = $_GET['msg'];
+ ?>
 <div class="jumbotron">
   <div class="bg-light p-2">
     <h2 class="text-center display-4"><?php echo $_GET['id']; ?></h2>
     <hr>
   </div>
-<form method="POST" enctype="multipart/form-data" action="update_submit.php?<?php echo "type=$type&msg=$msg&table=$table&id=$rating" ?>">
+<form method="POST" enctype="multipart/form-data" action="insert_submit.php?type=<?php echo "$type"; ?>&msg=<?php echo $msg; ?>&id=<?php echo $table; ?>">
 <?php if ($_GET['id'] == 'clubs_pubs' || $_GET['msg'] == 'run'): ?>
     <div class="form-group">
     <label for="name">Name</label>
