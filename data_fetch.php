@@ -59,9 +59,9 @@ elseif (isset($_GET['type'])){
   elseif ($_GET['type'] == '4') {
     $table = 'clubs_pubs';
     if (isset($value)){
-      $result = "SELECT * from clubs_pubs where name like '%$n%' order by type";
+      $result = "SELECT * from clubs_pubs where name like '%$n%'";
     }else {
-      $result = "SELECT * from clubs_pubs order by type";
+      $result = "SELECT * from clubs_pubs";
     }
   }
   elseif ($_GET['type'] == '5') {
