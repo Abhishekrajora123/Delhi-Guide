@@ -4,6 +4,7 @@ extract($_POST);
 if(isset($login))
 {
 	$pass = md5($p);
+	echo $pass;
 	$select="select email,password from admin where email='$e' and password='$pass'";
 	if($obj->login($select))
 	{

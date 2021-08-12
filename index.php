@@ -16,7 +16,7 @@
     </p>
     <hr>
     <div class="row">
-  <div class="col-sm-2">
+  <div class="col-sm-2 d-flex align-items-stretch p-3">
     <div class="card">
       <img src="images/JANTAR.jpg" height= "100px" class="card-img-top" alt="...">
       <div class="card-body">
@@ -25,7 +25,7 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-2">
+  <div class="col-sm-2 d-flex align-items-stretch p-3">
     <div class="card">
       <img src="images/LOTUS.jpg" height= "100px" class="card-img-top" alt="...">
       <div class="card-body">
@@ -34,7 +34,7 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-2">
+  <div class="col-sm-2 d-flex align-items-stretch p-3">
     <div class="card">
       <img src="images/red fort.jpg" height= "100px" class="card-img-top" alt="...">
       <div class="card-body">
@@ -43,7 +43,7 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-2">
+  <div class="col-sm-2 d-flex align-items-stretch p-3">
     <div class="card">
       <img src="images/qutub.jpg" height= "100px" class="card-img-top" alt="...">
       <div class="card-body" height= "200px">
@@ -52,7 +52,7 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-2">
+  <div class="col-sm-2 d-flex align-items-stretch p-3">
     <div class="card">
       <img src="images/ZOO.jpg" height= "100px" class="card-img-top" alt="...">
       <div class="card-body">
@@ -61,7 +61,7 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-2">
+  <div class="col-sm-2 d-flex align-items-stretch p-3">
     <div class="card">
       <img src="images/jama.jpg" height= "100px" class="card-img-top" alt="...">
       <div class="card-body">
