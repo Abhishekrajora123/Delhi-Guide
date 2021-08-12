@@ -7,7 +7,8 @@ if(isset($update))
   $id = $_GET['id'];
   $type = $_GET['type'];
   if ($table == 'admin'){
-    $result = "update $table SET name='$n',email='$e',password='$pass' WHERE id= '$id'";
+    $p = md5($pass);
+    $result = "update $table SET name='$n',email='$e',password='$p' WHERE id= '$id'";
   } elseif ($table == 'clubs_pubs') {
     $result = "update $table SET name='$n',address='$ad',map_link='$ml',description='$des',image_name='$in' WHERE id= '$id'";
   }

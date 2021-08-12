@@ -5,7 +5,8 @@ if(isset($submit))
 {
 	$table = $_GET['table'];
 	$type = $_GET['type'];
-	$inserts="insert into $table (name, email, password) values ('$n','$e','$pass')";
+	$p = md5($pass);
+	$inserts="insert into $table (name, email, password) values ('$n','$e','$p')";
   if($obj->insert($inserts))
 	{
 		$obj->url("admin_data.php?type=$type&msg=run&table=$table");

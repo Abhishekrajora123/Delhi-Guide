@@ -3,7 +3,8 @@ include "config.php";
 extract($_POST);
 if(isset($login))
 {
-	$select="select email,password from admin where email='$e' and password='$p'";
+	$pass = md5($p);
+	$select="select email,password from admin where email='$e' and password='$pass'";
 	if($obj->login($select))
 	{
 		$_SESSION['email']=$e;
