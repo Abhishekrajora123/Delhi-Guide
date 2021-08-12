@@ -90,7 +90,7 @@
       </ul>
     </div>
     </nav>
-    <section class="vh-100 gradient-custom">
+    <section class="vh-100">
       <div class="container py-5 h-100">
         <div class="row justify-content-center align-items-center h-100">
           <div class="col-12 col-lg-9 col-xl-7">
