@@ -37,11 +37,11 @@ else {
   </div>
   <div class="form-group">
     <label for="description">Description</label>
-    <input type="text" value="<?php  echo $row['description'];?> class="form-control" name="des" id="description" placeholder="Description">
+    <input type="text" value="<?php  echo $row['description'];?>" class="form-control" name="des" id="description" placeholder="Description">
   </div>
   <div class="form-group">
     <label for="image">Image Name</label>
-    <input type="text" value="<?php  echo $row['image_name'];?> class="form-control" name="in" id="image" placeholder="Image Name">
+    <input type="text" value="<?php  echo $row['image_name'];?>" class="form-control" name="in" id="image" placeholder="Image Name">
   </div>
   <?php } ?>
 <?php elseif ($flag == 1 && $_GET['table'] == 'admin'): while($row = $val->fetch_assoc()){?>
