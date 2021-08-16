@@ -6,6 +6,7 @@ include "data_fetch.php";
     <input type="text"  name="n" placeholder="Search Name"/><br><br>
     <input type="submit"  name="submit" value="Submit"/>
   </form>
+  <h3 class="text-center"><?php echo $_GET['table']; ?></h3>
   <?php if ($flag == 1 && $table == 'admin'): ?>
   <thead>
     <tr>
