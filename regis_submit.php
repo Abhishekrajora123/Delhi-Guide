@@ -13,7 +13,7 @@ if(isset($submit))
 	}
 	else
 	{
-		echo "Admin not created or already exists";
+		$obj->url("register.php?err=error");
 	}
 
 

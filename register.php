@@ -98,6 +98,11 @@
             <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
               <div class="card-body p-4 p-md-5">
                 <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Add Admin</h3>
+                <p class="text-center text-danger"><?php if (isset($_GET['err'])){
+                  if ($_GET['err'] == 'error'){
+                    echo "Admin not created or already exists";
+                  }
+                } ?></p>
                 <form method="post" enctype="multipart/form-data" action="regis_submit.php?type=<?php echo $_GET['type']; ?>&table=<?php echo $_GET['table']; ?>&id=<?php echo $_GET['id']; ?>">
                   <div class="row">
                     <div class="col-md-6 mb-3">
