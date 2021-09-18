@@ -4,10 +4,10 @@ session_start();
 // ini_set('display_errors', 'On');
 // set_error_handler("var_dump");
 class users{
-	public $host="remotemysql.com";
-	public $username="xVC3cf0d4O";
-	public $password="X4yO52sBLm";
-	public $dbname="xVC3cf0d4O";
+	public $host="sql6.freemysqlhosting.net";
+	public $username="sql6438181";
+	public $password="8TWtP7HmQm";
+	public $dbname="sql6438181";
 	public $run;
 // for testing
 
