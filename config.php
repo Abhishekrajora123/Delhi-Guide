@@ -9,7 +9,7 @@ class users{
 	public $password="8TWtP7HmQm";
 	public $dbname="sql6438181";
 	public $run;
-// for testing
+
 
 	public function __construct()
 	{
