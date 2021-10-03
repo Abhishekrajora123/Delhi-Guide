@@ -4,10 +4,10 @@ session_start();
 // ini_set('display_errors', 'On');
 // set_error_handler("var_dump");
 class users{
-	public $host="sql6.freemysqlhosting.net";
-	public $username="sql6438181";
-	public $password="8TWtP7HmQm";
-	public $dbname="sql6438181";
+	public $host="localhost:9090";
+	public $username="root";
+	public $password="";
+	public $dbname="guidetodelhi";
 	public $run;
 
 
