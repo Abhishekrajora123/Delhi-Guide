@@ -4,10 +4,10 @@ session_start();
 // ini_set('display_errors', 'On');
 // set_error_handler("var_dump");
 class users{
-	public $host="localhost:9090";
-	public $username="root";
-	public $password="";
-	public $dbname="guidetodelhi";
+	public $host="remotemysql.com";
+	public $username="3tW2KWIH83";
+	public $password="DDnGKnohcB";
+	public $dbname="3tW2KWIH83";
 	public $run;
 
 
